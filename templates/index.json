@@ -1,0 +1,13 @@
+{
+    "sections": {
+        "banner":{
+            "type": "home-banner",
+            "settings": {
+                "ban_head":"A hangover cure that actually works",
+                "ban_para":"<p>UNDOit support your mind and body's recovery after sessions on the dancefloor, at a festival or in your living room.<p>",
+                "cta_txt":"Buy Now"
+            }
+        }
+    },
+    "order": ["banner"]
+}

@@ -1,0 +1,152 @@
+html{
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility !important;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FDF9F3;
+    font-family: "Poppins", sans-serif;
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility !important;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p, ul, li, a{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Poppins", sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    color: inherit;
+}
+button:focus-visible, input:focus-visible{
+    outline: none;
+}
+button{
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.homepage {
+    text-align: center;
+    padding-top: 10em;
+}
+.logo {
+    width: 25%;
+}
+.container-fluid{
+    padding: 0 3%;
+}
+h1{
+    font-size: clamp(32px, 5vw, 60px);
+    color: #171B34;
+    line-height: 95%;
+    font-weight: 700;
+}
+
+h2{
+    font-size: clamp(32px, 5vw, 60px);
+    color: #171B34;
+    line-height: 95%;
+    font-weight: 700;
+}
+@keyframes hue {
+0% {
+    filter: hue-rotate(60deg);
+}
+100% {
+    filter: hue-rotate(-30deg);
+}
+}
+
+
+/* Navbar */
+
+.nav{
+    padding: 24px 0;
+    position: absolute;
+    top: 0;
+    z-index: 99999;
+}
+.nav-left a {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #1E1E20;
+}
+.nav-logo {
+    width: 15%;
+}
+.nav-logo img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+.nav-cart {
+    width: 40px;
+    height: 40px;
+}
+.nav-cart svg {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 36px;
+}
+
+/* Navbar Ends */
+
+/* Banner Section */
+section.home-banner{
+    height: 100vh;
+    padding-top: 130px;
+    position: relative;
+    z-index: 2;
+}
+section.home-banner:before {
+    content: "";
+    background-image: url('https://cdn.shopify.com/s/files/1/0651/3285/5486/files/undo-it-gradient.webp?v=1710761802');
+    background-size: 100% 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: hue 6s infinite alternate ease-in-out;
+    z-index: -1;
+}
+
+/* Banner Section Ends */
