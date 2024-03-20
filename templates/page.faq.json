@@ -4,7 +4,52 @@
             "type": "faq",
             "settings": {
 
-            }
+            },
+            "blocks": {
+                "faq1": {
+                    "type": "orders",
+                    "settings": {
+                        "faq_inner_ques":"How can I place an order for UNDOit?",
+                        "faq_inner_ans":"<p>Ordering UNDOit is a breeze! You can place your order directly on our website or through popular marketplaces like Amazon, Flipkart, HealthKart. With just a few clicks, you'll have hangover relief heading your way in no time.</p>"
+                    }
+                },
+                "faq2": {
+                    "type": "orders",
+                    "settings": {
+                        "faq_inner_ques":"What payment methods do you accept?",
+                        "faq_inner_ans":"<p>We're all about convenience! You can pay for your UNDOit order using a variety of payment methods, including credit/debit cards, digital wallets, and more. Choose what works best for you! Have questions? Contact our friendly team at insert email or call our toll-free number at insert toll-free number.</p>"
+                    }
+                },
+                "faq3": {
+                    "type": "orders",
+                    "settings": {
+                        "faq_inner_ques":"Can I track my order once it's been placed?",
+                        "faq_inner_ans":"<p>Absolutely! Once your order is on its way, you'll receive a confirmation email with tracking information. Keep an eye on your inbox for updates. Need assistance? Reach out to us at insert email  or call our toll-free number at insert toll-free number.</p>"
+                    }
+                },
+                "faq4": {
+                    "type": "orders",
+                    "settings": {
+                        "faq_inner_ques":"How long will it take for my order to arrive?",
+                        "faq_inner_ans":"<p>We're dedicated to prompt delivery! Your UNDOit order will typically arrive within insert delivery TAT days. Hang tight, and your hangover relief will be on its way soon! Have questions? Contact us at insert email or call our toll-free number at insert toll-free number.</p>"
+                    }
+                },
+                "faq5": {
+                    "type": "orders",
+                    "settings": {
+                        "faq_inner_ques":"What should I do if there's an issue with my order?",
+                        "faq_inner_ans":"<p>Don't worry – we're here to help! If you encounter any issues with your UNDOit order, reach out to our dedicated customer support team at insert email or call our toll-free number at insert toll-free number. We'll work diligently to resolve any concerns you may have.</p>"
+                    }
+                },
+                "faq6": {
+                    "type": "orders",
+                    "settings": {
+                        "faq_inner_ques":"My payment has been made, money deducted from my account, but the order was not placed. What should I do?",
+                        "faq_inner_ans":"<p>We apologize for the inconvenience. Please contact our customer support team at insert email or call insert toll-free number with your order details. We'll swiftly investigate and ensure the issue is resolved for you.</p>"
+                    }
+                }
+            },
+            "block_order": ["faq1", "faq2", "faq3", "faq4", "faq5", "faq6"]
         }
     },
     "order": ["faq"]
