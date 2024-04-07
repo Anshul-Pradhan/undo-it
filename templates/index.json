@@ -12,7 +12,42 @@
             "type": "other-product",
             "settings": {
                 "product_img":"shopify:\/\/shop_images\/undo-it_e9b5e01e-78fc-4661-8f48-0d161e69e2ca.png?v=1712491532"
-            }
+            },
+            "blocks": {
+                "item1":{
+                    "type":"side-effect",
+                    "settings": {
+                        "img":"shopify:\/\/shop_images\/pill.png?v=1712495412",
+                        "head":"painkillers",
+                        "para":"destroys liver further"
+                    }
+                },
+                "item2":{
+                    "type":"side-effect",
+                    "settings": {
+                        "img":"shopify:\/\/shop_images\/pill.png?v=1712495412",
+                        "head":"painkillers",
+                        "para":"destroys liver further"
+                    }
+                },
+                "item3":{
+                    "type":"side-effect",
+                    "settings": {
+                        "img":"shopify:\/\/shop_images\/pill.png?v=1712495412",
+                        "head":"painkillers",
+                        "para":"destroys liver further"
+                    }
+                },
+                "item4":{
+                    "type":"side-effect",
+                    "settings": {
+                        "img":"shopify:\/\/shop_images\/pill.png?v=1712495412",
+                        "head":"painkillers",
+                        "para":"destroys liver further"
+                    }
+                }
+            },
+            "block_order": ["item1", "item2", "item3", "item4"]
         }
     },
     "order": ["banner", "other-product"]

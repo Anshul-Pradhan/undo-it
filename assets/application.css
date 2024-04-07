@@ -51,6 +51,11 @@ button{
     height: 100%;
     object-fit: cover;
 }
+.icon{
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
 .homepage {
     text-align: center;
     padding-top: 10em;
@@ -73,6 +78,9 @@ h2{
     color: #171B34;
     line-height: 95%;
     font-weight: 700;
+}
+h2.all-caps{
+    text-transform: uppercase;
 }
 h3{
     font-size: clamp(24px, 5vw, 42px);
@@ -183,6 +191,25 @@ section.home-banner:before {
 }
 
 /* Banner Section Ends */
+
+/* Other Product Section */
+
+.dw-head {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 60px;
+}
+.dw-head h2 span.hang{
+    transform: rotate(11deg) translateY(18px);
+    display: inline-block;
+    margin-left: 9px;
+}
+.dw-wrapper{
+    margin-top: 120px;
+}
+
+/* Other Product Section Ends */
 
 /* Faq Page */
 .faq-grad-img {

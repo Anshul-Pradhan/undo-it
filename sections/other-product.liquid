@@ -5,11 +5,29 @@
   <div class="container">
     <div class="dw-wrapper">
       <div class="dw-head">
-        <h2>social drinking is on the rise, and so are<span>
+        <h2>social drinking is on the rise, and so are<span class="hang">
             hangovers</span>
+          <h2 class="all-caps">CURRENT SOLUTIONS DON’T WORK</h2>
         </h2>
       </div>
-      <div class="dw-content"></div>
+      <div class="dw-content">
+        {% for block in section.blocks %}
+          <div class="item">
+            <div class="dwi-img">
+              <img
+                src="{{ block.settings.img |  img_url: 'master' }}"
+                alt=""
+                class="icon">
+            </div>
+            <div class="dwi-head">
+              <p>{{ block.settings.head }}</p>
+            </div>
+            <div class="dwi-para">
+              <p>{{ block.settings.para }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </section>
@@ -26,6 +44,27 @@
         "type": "text",
         "id": "haeding",
         "label": "Heading"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Side Effects",
+        "type": "side-effect",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Select Image"
+          }, {
+            "type": "text",
+            "id": "head",
+            "label": "Heading"
+          }, {
+            "type": "text",
+            "id": "para",
+            "label": "Paragraph"
+          }
+        ]
       }
     ]
   }
