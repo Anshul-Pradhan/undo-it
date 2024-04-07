@@ -322,6 +322,20 @@ section.home-banner:before {
 
 /* Why Undo Ends */
 
+/* Usp Section */
+
+.usp-head p{
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 46px;
+    text-align: right;
+}
+.usp-wrapper{
+    display: flex;
+    align-items: stretch;
+    position: relative;
+}
+
 /* Faq Page */
 .faq-grad-img {
     position: relative;

@@ -103,7 +103,8 @@
         "usp":{
             "type": "undo-usp",
             "settings": {
-                "head":"<h2>you can also consume it daily to <br><strong>IMPROVE OVERALL WELLBEING<br> & STAY HYDRATED</strong></h2>"
+                "head":"<p>you can also consume it daily to <br><strong>IMPROVE OVERALL WELLBEING<br> & STAY HYDRATED</strong></p>",
+                "img":"shopify:\/\/shop_images\/Group_11.png?v=1712501252"
             }
         }
     },
