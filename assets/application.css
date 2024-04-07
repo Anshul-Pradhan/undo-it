@@ -270,7 +270,33 @@ section.home-banner:before {
     display: inline-flex;
     width: 180px;
 }
-
+.wuw-wrapper .item{
+    display: flex; 
+    justify-content: space-between;
+}
+.wuw-wrapper .item .left-head{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+    justify-content: center;
+}
+.wuw-wrapper .item .left-head p{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 200%;
+    text-align: right;
+}
+.wuw-wrapper .item .right-con{
+    width: 50%;
+}
+.wuw-wrapper .item .right-con p{
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: left;
+}
 
 /* Why Undo Ends */
 
