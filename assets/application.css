@@ -56,6 +56,10 @@ button{
     height: auto;
     max-height: 100%;
 }
+.pad-130{
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
 .homepage {
     text-align: center;
     padding-top: 10em;
@@ -247,6 +251,22 @@ section.home-banner:before {
 }
 
 /* Other Product Section Ends */
+
+/* Why Undo */
+
+.wuw-head h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.wuw-head h3 span.undo-img {
+    display: inline-flex;
+    width: 180px;
+}
+
+
+/* Why Undo Ends */
 
 /* Faq Page */
 .faq-grad-img {

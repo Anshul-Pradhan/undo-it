@@ -50,7 +50,10 @@
                 }
             },
             "block_order": ["item1", "item2", "item3", "item4"]
+        },
+        "why-undo":{
+            "type": "why-undo-works"
         }
     },
-    "order": ["banner", "other-product"]
+    "order": ["banner", "other-product", "why-undo"]
 }
