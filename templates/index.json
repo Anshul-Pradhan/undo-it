@@ -7,7 +7,13 @@
                 "ban_para":"<p>UNDOit support your mind and body's recovery after sessions on the dancefloor, at a festival or in your living room.<p>",
                 "cta_txt":"Buy Now"
             }
+        },
+        "other-product":{
+            "type": "other-product",
+            "settings": {
+
+            }
         }
     },
-    "order": ["banner"]
+    "order": ["banner", "other-product"]
 }
