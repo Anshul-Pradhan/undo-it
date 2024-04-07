@@ -270,6 +270,12 @@ section.home-banner:before {
     display: inline-flex;
     width: 180px;
 }
+.wuw-wrapper{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
 .wuw-wrapper .item{
     display: flex; 
     justify-content: space-between;

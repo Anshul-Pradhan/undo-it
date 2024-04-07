@@ -64,6 +64,14 @@
                         "head":"feel good fast",
                         "content":"<p>with <strong>all natural ingredients</strong></p>"
                     }
+                },
+                "item2":{
+                    "type": "why-undo",
+                    "settings": {
+                        "head":" ENERGY & HYDRATION",
+                        "subhead":"ELECTROLYTES",
+                        "content":"<p><strong>niacin</strong><br>Niacin, a B vitamin, helps regulate electrolyte balance in the body, crucial for hydration and overall fluid balance, especially during and after alcohol consumption.<br><br><strong>potassium chloride</strong><br>Potassium chloride helps replenish vital electrolytes lost during drinking, supporting optimal hydration levels for a refreshed feeling.<strong>vitamin B6</strong><br>Vitamin B6 helps your body regulate electrolyte levels, assisting in fluid balance and reducing the effects of dehydration.</p>"
+                    }
                 }
             },
             "block_order": ["item1"]
