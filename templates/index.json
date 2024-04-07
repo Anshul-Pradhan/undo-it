@@ -52,7 +52,21 @@
             "block_order": ["item1", "item2", "item3", "item4"]
         },
         "why-undo":{
-            "type": "why-undo-works"
+            "type": "why-undo-works",
+            "settings": {
+                "head-half1":"why",
+                "head-half2":"work"
+            },
+            "blocks": {
+                "item1":{
+                    "type": "why-undo",
+                    "settings": {
+                        "head":"feel good fast",
+                        "content":"<p>with <strong>all natural ingredients</strong></p>"
+                    }
+                }
+            },
+            "block_order": ["item1"]
         }
     },
     "order": ["banner", "other-product", "why-undo"]

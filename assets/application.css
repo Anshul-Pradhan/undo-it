@@ -60,6 +60,12 @@ button{
     padding-top: 75px;
     padding-bottom: 75px;
 }
+.padb-75{
+    padding-bottom: 75px;
+}
+.padt-75{
+    padding-top: 75px;
+}
 .homepage {
     text-align: center;
     padding-top: 10em;
