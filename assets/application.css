@@ -181,7 +181,6 @@ h4{
 /* Banner Section */
 section.home-banner{
     height: 100vh;
-    padding-top: 130px;
     position: relative;
     z-index: 2;
 }
