@@ -212,6 +212,7 @@ section.home-banner:before {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
+    margin-top: 50px;
 }
 .dw-content .item{
     display: flex;
@@ -226,7 +227,7 @@ section.home-banner:before {
     display: flex;
 }
 .dw-content .item .dwi-head{
-    margin-top: 8px;
+    margin-top: 5px;
 }
 .dw-content .item .dwi-head p{
     font-size: 25px;

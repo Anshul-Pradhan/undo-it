@@ -5,10 +5,8 @@
   <div class="container">
     <div class="dw-wrapper">
       <div class="dw-head">
-        <h2>social drinking is on the rise, and so are<span class="hang">
-            hangovers</span>
-          <h2 class="all-caps">CURRENT SOLUTIONS DON’T WORK</h2>
-        </h2>
+        {{ section.settings.heading1 }}
+        <h2 class="all-caps">{{ section.settings.heading2 }}</h2>
       </div>
       <div class="dw-content">
         {% for block in section.blocks %}
@@ -41,9 +39,13 @@
         "id": "product_img",
         "label": "Product Image"
       }, {
+        "type": "richtext",
+        "id": "haeding1",
+        "label": "Heading one"
+      }, {
         "type": "text",
-        "id": "haeding",
-        "label": "Heading"
+        "id": "haeding2",
+        "label": "Heading two"
       }
     ],
     "blocks": [
