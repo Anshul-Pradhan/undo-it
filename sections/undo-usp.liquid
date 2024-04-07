@@ -1,0 +1,36 @@
+<section class="usp-section">
+  <div class="container">
+    <div class="usp-wrapper">
+      <div class="usp-head">
+        {{ section.settings.head }}
+
+      </div>
+      <div class="usp-img">
+        <img
+          src="{{ section.settings.img |  img_url: 'master' }}"
+          alt=""
+          class="icon">
+      </div>
+      <div class="usp-motto">
+        <ul>
+          {% for block in section.blocks %}
+            <li></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "USP Section",
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "head",
+        "label": "HEading"
+      }
+    ]
+  }
+{% endschema %}

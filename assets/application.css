@@ -279,6 +279,7 @@ section.home-banner:before {
 .wuw-wrapper .item{
     display: flex; 
     justify-content: space-between;
+    position: relative;
 }
 .wuw-wrapper .item .left-head{
     width: 35%;
@@ -286,7 +287,10 @@ section.home-banner:before {
     flex-direction: column;
     align-items: flex-end;
     gap: 12px;
-    justify-content: center;
+    justify-content: flex-start;
+    height: 100%;
+    position: sticky;
+    top: 10px;
 }
 .wuw-wrapper .item .left-head p{
     font-size: 20px;
@@ -297,9 +301,21 @@ section.home-banner:before {
 .wuw-wrapper .item .right-con{
     width: 50%;
 }
-.wuw-wrapper .item .right-con p{
+.wuw-wrapper .item:first-child .right-con p{
     font-size: 35px;
     font-weight: 400;
+    line-height: 150%;
+    text-align: left;
+}
+.wuw-wrapper .item .right-con p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: left;
+}
+.wuw-wrapper .item .right-con p strong{
+    font-size: 35px;
+    font-weight: 700;
     line-height: 150%;
     text-align: left;
 }
