@@ -334,6 +334,40 @@ section.home-banner:before {
     display: flex;
     align-items: stretch;
     position: relative;
+    height: 100%;
+    justify-content: space-between;
+}
+.usp-section{
+    height: 82vh;
+}
+.usp-section .container{
+    height: 100%;
+}
+.usp-img {
+    position: absolute;
+    inset: 0;
+    width: 45%;
+    margin: 0 auto;
+    z-index: -1;
+}
+.usp-head{
+    width: 50%;
+}
+.usp-motto{
+    width: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.usp-motto li img{
+    width: 120px;
+}
+.usp-motto li{
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 170%;
+    text-align: left;
+
 }
 
 /* Faq Page */
