@@ -1,6 +1,6 @@
 <section class="dont-work">
   <div class="dw-top">
-    <img src="" alt="">
+    <img src="{{ section.settings.product_img |  img_url: 'master' }}" alt="">
   </div>
   <div class="container"></div>
 </section>
@@ -11,7 +11,7 @@
     "settings": [
       {
         "type": "image_picker",
-        "id": "product",
+        "id": "product_img",
         "label": "Product Image"
       }, {
         "type": "text",

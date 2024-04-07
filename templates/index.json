@@ -11,7 +11,7 @@
         "other-product":{
             "type": "other-product",
             "settings": {
-
+                "product_img":"shopify:\/\/shop_images\/undo-it.png?v=1712481156"
             }
         }
     },
