@@ -25,25 +25,25 @@
                 "item2":{
                     "type":"side-effect",
                     "settings": {
-                        "img":"shopify:\/\/shop_images\/pill.png?v=1712495412",
-                        "head":"painkillers",
-                        "para":"destroys liver further"
+                        "img":"shopify:\/\/shop_images\/coffee.png?v=1712495412",
+                        "head":"coffee",
+                        "para":"diuretic, dehydrates the body. narrows blood vessels & raises blood pressure could worsen headache"
                     }
                 },
                 "item3":{
                     "type":"side-effect",
                     "settings": {
-                        "img":"shopify:\/\/shop_images\/pill.png?v=1712495412",
-                        "head":"painkillers",
-                        "para":"destroys liver further"
+                        "img":"shopify:\/\/shop_images\/oily-food.png?v=1712495412",
+                        "head":"oily food",
+                        "para":"upsets your already sensitive digestive system, worsening hangover"
                     }
                 },
                 "item4":{
                     "type":"side-effect",
                     "settings": {
-                        "img":"shopify:\/\/shop_images\/pill.png?v=1712495412",
-                        "head":"painkillers",
-                        "para":"destroys liver further"
+                        "img":"shopify:\/\/shop_images\/water.png?v=1712495412",
+                        "head":"water",
+                        "para":"not enough nutritional support to undo the damage done by alcohol"
                     }
                 }
             },
