@@ -1,56 +1,256 @@
 {
-    "sections": {
-        "faq":{
-            "type": "faq",
-            "settings": {
-
-            },
-            "blocks": {
-                "faq1": {
-                    "type": "orders",
-                    "settings": {
-                        "faq_inner_ques":"How can I place an order for UNDOit?",
-                        "faq_inner_ans":"<p>Ordering UNDOit is a breeze! You can place your order directly on our website or through popular marketplaces like Amazon, Flipkart, HealthKart. With just a few clicks, you'll have hangover relief heading your way in no time.</p>"
-                    }
-                },
-                "faq2": {
-                    "type": "orders",
-                    "settings": {
-                        "faq_inner_ques":"What payment methods do you accept?",
-                        "faq_inner_ans":"<p>We're all about convenience! You can pay for your UNDOit order using a variety of payment methods, including credit/debit cards, digital wallets, and more. Choose what works best for you! Have questions? Contact our friendly team at insert email or call our toll-free number at insert toll-free number.</p>"
-                    }
-                },
-                "faq3": {
-                    "type": "orders",
-                    "settings": {
-                        "faq_inner_ques":"Can I track my order once it's been placed?",
-                        "faq_inner_ans":"<p>Absolutely! Once your order is on its way, you'll receive a confirmation email with tracking information. Keep an eye on your inbox for updates. Need assistance? Reach out to us at insert email  or call our toll-free number at insert toll-free number.</p>"
-                    }
-                },
-                "faq4": {
-                    "type": "orders",
-                    "settings": {
-                        "faq_inner_ques":"How long will it take for my order to arrive?",
-                        "faq_inner_ans":"<p>We're dedicated to prompt delivery! Your UNDOit order will typically arrive within insert delivery TAT days. Hang tight, and your hangover relief will be on its way soon! Have questions? Contact us at insert email or call our toll-free number at insert toll-free number.</p>"
-                    }
-                },
-                "faq5": {
-                    "type": "orders",
-                    "settings": {
-                        "faq_inner_ques":"What should I do if there's an issue with my order?",
-                        "faq_inner_ans":"<p>Don't worry – we're here to help! If you encounter any issues with your UNDOit order, reach out to our dedicated customer support team at insert email or call our toll-free number at insert toll-free number. We'll work diligently to resolve any concerns you may have.</p>"
-                    }
-                },
-                "faq6": {
-                    "type": "orders",
-                    "settings": {
-                        "faq_inner_ques":"My payment has been made, money deducted from my account, but the order was not placed. What should I do?",
-                        "faq_inner_ans":"<p>We apologize for the inconvenience. Please contact our customer support team at insert email or call insert toll-free number with your order details. We'll swiftly investigate and ensure the issue is resolved for you.</p>"
-                    }
-                }
-            },
-            "block_order": ["faq1", "faq2", "faq3", "faq4", "faq5", "faq6"]
+  "sections": {
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "orders_Q6QURP": {
+          "type": "orders",
+          "settings": {
+            "faq_inner_ques": "How can I place an order for UNDOit?",
+            "faq_inner_ans": "<p>Ordering UNDOit is a breeze! You can place your order directly on our website or through popular marketplaces like Amazon, Flipkart, HealthKart. With just a few clicks, you'll have hangover relief heading your way in no time.<\/p>"
+          }
+        },
+        "orders_EpTfiL": {
+          "type": "orders",
+          "settings": {
+            "faq_inner_ques": "What payment methods do you accept?",
+            "faq_inner_ans": "<p>We're all about convenience! You can pay for your UNDOit order using a variety of payment methods, including credit\/debit cards, digital wallets, and more. Choose what works best for you! Have questions? Contact our friendly team at &lt;insert email&gt; or call our toll-free number at &lt;insert toll-free number&gt;.<\/p>"
+          }
+        },
+        "orders_ndpfTM": {
+          "type": "orders",
+          "settings": {
+            "faq_inner_ques": "Can I track my order once it's been placed?",
+            "faq_inner_ans": "<p>Absolutely! Once your order is on its way, you'll receive a confirmation email with tracking information. Keep an eye on your inbox for updates. Need assistance? Reach out to us at &lt;insert email&gt;  or call our toll-free number at &lt;insert toll-free number&gt;.<\/p>"
+          }
+        },
+        "orders_ff8qqm": {
+          "type": "orders",
+          "settings": {
+            "faq_inner_ques": "How long will it take for my order to arrive?",
+            "faq_inner_ans": "<p>We're dedicated to prompt delivery! Your UNDOit order will typically arrive within &lt;insert delivery TAT&gt; days. Hang tight, and your hangover relief will be on its way soon! Have questions? Contact us at &lt;insert email&gt; or call our toll-free number at &lt;insert toll-free number&gt;.<\/p>"
+          }
+        },
+        "orders_XGxGrk": {
+          "type": "orders",
+          "settings": {
+            "faq_inner_ques": "What should I do if there's an issue with my order?",
+            "faq_inner_ans": "<p>Don't worry – we're here to help! If you encounter any issues with your UNDOit order, reach out to our dedicated customer support team at &lt;insert email&gt; or call our toll-free number at &lt;insert toll-free number&gt;. We'll work diligently to resolve any concerns you may have.<\/p>"
+          }
+        },
+        "orders_rkqRak": {
+          "type": "orders",
+          "settings": {
+            "faq_inner_ques": "My payment has been made, money deducted from my account, but the order was not placed. What should I do?",
+            "faq_inner_ans": "<p>We apologize for the inconvenience. Please contact our customer support team at &lt;insert email&gt; or call &lt;insert toll-free number&gt; with your order details. We'll swiftly investigate and ensure the issue is resolved for you.<\/p>"
+          }
+        },
+        "orders_DaQdVz": {
+          "type": "orders",
+          "settings": {
+            "faq_inner_ques": "Can I modify or cancel my order after it's been placed?",
+            "faq_inner_ans": "<p>Flexibility is key! If you need to modify or cancel your UNDOit order, please contact us as soon as possible. Reach out to our team at &lt;insert email&gt; or call our toll-free number at &lt;insert toll-free number&gt;, and we'll do our best to accommodate your request before your order ships.<\/p>"
+          }
+        },
+        "orders_xqQXex": {
+          "type": "orders",
+          "settings": {
+            "faq_inner_ques": "Do you offer international shipping?",
+            "faq_inner_ans": "<p>Absolutely! UNDOit is here to save the day worldwide. We offer international shipping options, so you can enjoy hangover relief wherever your adventures take you. Need more information? Contact us at &lt;insert email&gt; or call our toll-free number at &lt;insert toll-free number&gt;.<\/p>"
+          }
+        },
+        "orders_xJJ6cp": {
+          "type": "orders",
+          "settings": {
+            "faq_inner_ques": "What is your return policy?",
+            "faq_inner_ans": "<p>Your satisfaction is our priority! If you're not completely happy with your UNDOit order, please refer to our return policy on our website or reach out to our team at  &lt;insert email&gt; or call our toll-free number at &lt;insert toll-free number&gt; for assistance.<\/p>"
+          }
+        },
+        "orders_CdhQjj": {
+          "type": "orders",
+          "settings": {
+            "faq_inner_ques": "Are there any additional fees associated with shipping?",
+            "faq_inner_ans": "<p>Transparency is key! The shipping fees for your UNDOit order will be calculated at checkout based on your location and chosen shipping method. No hidden surprises here! Have questions? Contact us at  &lt;insert email&gt; or call our toll-free number at &lt;insert toll-free number&gt; .<\/p>"
+          }
+        },
+        "orders_E7pJw3": {
+          "type": "orders",
+          "settings": {
+            "faq_inner_ques": "Can I purchase UNDOit in bulk for events or parties?",
+            "faq_inner_ans": "<p>100%! UNDOit is the perfect addition to any event or party. Contact our team at &lt;insert email&gt; or call our toll-free number at &lt;insert toll-free number&gt; to inquire about bulk ordering options and make your next gathering a hangover-free zone!<\/p>"
+          }
+        },
+        "product_8YPiUE": {
+          "type": "product",
+          "settings": {
+            "faq_inner_ques": "What is UNDOit?",
+            "faq_inner_ans": "<p>UNDOit is an anti-hangover effervescent tablet formulated to provide instant relief after a night out. It prevents hangovers, relieves symptoms like headaches and nausea, detoxifies the liver, and reduces inflammation. Made with the goodness of real, natural ingredients like &lt;insert names&gt;, UNDOit is 100% herbal and approved by the Department of AYUSH. It's also ISO and GMP certified, non-GMO, paraben-free, and contains no added sugars. With its refreshing flavors, UNDOit ensures a hassle-free morning after.<\/p>"
+          }
+        },
+        "product_MdnWRx": {
+          "type": "product",
+          "settings": {
+            "faq_inner_ques": "How does UNDOit work?",
+            "faq_inner_ans": "<p>Our specially formulated blend of vitamins, electrolytes, and natural ingredients helps to replenish nutrients lost during alcohol consumption, supporting your body's recovery process.  &lt;fill in more info as and when we gain clarity&gt;<\/p>"
+          }
+        },
+        "product_PQejPq": {
+          "type": "product",
+          "settings": {
+            "faq_inner_ques": "How do I consume UNDOit?",
+            "faq_inner_ans": "<p>Simply drop a tablet into water, let it fizz away, then drink up! Simple as that.<\/p>"
+          }
+        },
+        "product_z3rCEV": {
+          "type": "product",
+          "settings": {
+            "faq_inner_ques": "Can I mix UNDOit with other beverages?",
+            "faq_inner_ans": "<p>Absolutely! Feel free to mix it with your preferred non-alcoholic drink, but avoid carbonation for optimal results. &lt;not sure, just treat the answer as a placeholder text&gt;<\/p>"
+          }
+        },
+        "product_eMfqdr": {
+          "type": "product",
+          "settings": {
+            "faq_inner_ques": "Can I adjust the dosage of UNDOit based on my alcohol intake?",
+            "faq_inner_ans": "<p>Stick to the recommended dose as indicated on the packaging for a smoother journey. No need to overdo it!<\/p>"
+          }
+        },
+        "product_J4eNBU": {
+          "type": "product",
+          "settings": {
+            "faq_inner_ques": "How long does UNDOit remain effective?",
+            "faq_inner_ans": "<p>UNDOit is a long-lasting ally. With a shelf-life of &lt;insert duration&gt; from the \"Best Before End\" (BBE) date, it's always primed to tackle those hangover blues whenever you need it.<\/p>"
+          }
+        },
+        "product_X4HjFw": {
+          "type": "product",
+          "settings": {
+            "faq_inner_ques": "How many tablets should I take for a heavy drinking session?",
+            "faq_inner_ans": "<p>Follow the recommended dosage on the packaging, and if it's a night of epic proportions, an extra tablet won't hurt. Just keep it sensible!<\/p>"
+          }
+        },
+        "product_gyUL7z": {
+          "type": "product",
+          "settings": {
+            "faq_inner_ques": "Can I take UNDOit on an empty stomach?",
+            "faq_inner_ans": "<p>It's perfectly fine to take it on an empty stomach, but if you're feeling fancy, pair it with a snack for an even smoother experience.<\/p>"
+          }
+        },
+        "product_bmAXam": {
+          "type": "product",
+          "settings": {
+            "faq_inner_ques": "Should I take UNDOit in the morning or at night?",
+            "faq_inner_ans": "<p>It's best to take UNDOit after your last drink, whether that's in the evening or late at night. It works to support your body's recovery process, so you can wake up feeling refreshed and ready to take on the day ahead.<\/p>"
+          }
+        },
+        "product_7fUYFF": {
+          "type": "product",
+          "settings": {
+            "faq_inner_ques": "How long does it take for UNDOit to work?",
+            "faq_inner_ans": "<p>UNDOit kicks into action as soon as it's dissolved in water. Just remember, everyone's body is unique, so results may vary. But trust us, your future self will thank you for it!<\/p>"
+          }
+        },
+        "product_xHFHXa": {
+          "type": "product",
+          "settings": {
+            "faq_inner_ques": "How soon should I take UNDOit after drinking alcohol?",
+            "faq_inner_ans": "<p>ASAP after your last drink or before hitting the hay for a night of partying. Don't procrastinate on feeling better!<\/p><p>When should I take UNDOit?<\/p><p>We recommend taking one tablet before or during alcohol consumption, and another after your last drink to maximize its effectiveness.<\/p>"
+          }
+        },
+        "product_cBFcn3": {
+          "type": "product",
+          "settings": {
+            "faq_inner_ques": "Is UNDOit safe to use?",
+            "faq_inner_ans": "<p>100%, UNDOit is made with carefully selected ingredients and is safe for consumption when used as directed.<\/p>"
+          }
+        },
+        "product_h7nFUr": {
+          "type": "product",
+          "settings": {
+            "faq_inner_ques": "Does UNDOit prevent me from getting drunk?",
+            "faq_inner_ans": "<p>No, UNDOit does not prevent intoxication. It's designed to help alleviate the symptoms of a hangover by supporting your body's recovery process.<\/p>"
+          }
+        },
+        "product_fCfKxM": {
+          "type": "product",
+          "settings": {
+            "faq_inner_ques": "Can I take UNDOit if I'm pregnant or breastfeeding?",
+            "faq_inner_ans": "<p>We recommend consulting with a healthcare professional before using Undoit if you are pregnant, breastfeeding, or have any underlying health conditions.<\/p>"
+          }
+        },
+        "product_GRCGM7": {
+          "type": "product",
+          "settings": {
+            "faq_inner_ques": "Are there any side effects of using UNDOit?",
+            "faq_inner_ans": "<p>UNDOit is generally well-tolerated, but as with any supplement, some individuals may experience mild side effects. If you experience any adverse reactions, discontinue use and consult with a healthcare professional.<\/p>"
+          }
+        },
+        "product_cJjAt4": {
+          "type": "product",
+          "settings": {
+            "faq_inner_ques": "Can I take UNDOit with other medications?",
+            "faq_inner_ans": "<p>If you're currently taking medication or have any medical concerns, we advise consulting with a healthcare professional before using UNDOit to ensure there are no potential interactions.<\/p>"
+          }
+        },
+        "product_Fj9UJm": {
+          "type": "product",
+          "settings": {
+            "faq_inner_ques": "Is UNDOit suitable for vegetarian, vegan, or gluten-free diets?",
+            "faq_inner_ans": "<p>Yes! UNDOit checks all the boxes – it's vegetarian, vegan, and gluten-free.<\/p>"
+          }
+        },
+        "product_7j7yb6": {
+          "type": "product",
+          "settings": {
+            "faq_inner_ques": "What flavors does UNDOit come in?",
+            "faq_inner_ans": "<p>UNDOit comes in a range of refreshing flavors, ensuring there's something for everyone's palate. Stay tuned for updates on our flavor lineup.&lt;fill in more info as and when we gain clarity&gt;<\/p>"
+          }
+        },
+        "product_mPkXTr": {
+          "type": "product",
+          "settings": {
+            "faq_inner_ques": "Where can I purchase UNDOit?",
+            "faq_inner_ans": "<p>UNDOit will be available for purchase on our website and through select retailers. &lt;fill in more info as and when we gain clarity&gt;<\/p>"
+          }
         }
-    },
-    "order": ["faq"]
+      },
+      "block_order": [
+        "orders_Q6QURP",
+        "orders_EpTfiL",
+        "orders_ndpfTM",
+        "orders_ff8qqm",
+        "orders_XGxGrk",
+        "orders_rkqRak",
+        "orders_DaQdVz",
+        "orders_xqQXex",
+        "orders_xJJ6cp",
+        "orders_CdhQjj",
+        "orders_E7pJw3",
+        "product_8YPiUE",
+        "product_MdnWRx",
+        "product_PQejPq",
+        "product_z3rCEV",
+        "product_eMfqdr",
+        "product_J4eNBU",
+        "product_X4HjFw",
+        "product_gyUL7z",
+        "product_bmAXam",
+        "product_7fUYFF",
+        "product_xHFHXa",
+        "product_cBFcn3",
+        "product_h7nFUr",
+        "product_fCfKxM",
+        "product_GRCGM7",
+        "product_cJjAt4",
+        "product_Fj9UJm",
+        "product_7j7yb6",
+        "product_mPkXTr"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "faq"
+  ]
 }
