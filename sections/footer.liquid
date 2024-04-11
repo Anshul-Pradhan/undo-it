@@ -15,7 +15,7 @@
   <div class="container">
     <div class="footer-wrapper">
       <div class="head">
-        <p></p>
+        {{ section.settings.footHead }}
       </div>
       <div class="newsletter">
         <input type="email">
@@ -38,6 +38,11 @@
         "id": "para",
         "label": "Paragraph",
         "default": "<p>we make products that focus on <strong>healing through hydration</strong> with mostly <strong>herbal ingredients</strong></p>"
+      }, {
+        "type": "richtext",
+        "id": "footHead",
+        "label": "Footer Text",
+        "default": "<p>Because. We. Are. Your. Friends.<br>10% off your first order over ₹2000.</p>"
       }
     ]
   }
