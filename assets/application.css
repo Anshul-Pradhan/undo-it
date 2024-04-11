@@ -370,6 +370,17 @@ section.home-banner:before {
 
 }
 
+/* Usp Section Ends */
+
+/* Footer */
+
+.pre-footer .ead h2 {
+    font-size: clamp(32px, 5vw, 60px)
+}
+
+
+/* Footer Ends */
+
 /* Faq Page */
 .faq-grad-img {
     position: relative;
