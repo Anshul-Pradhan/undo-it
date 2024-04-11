@@ -338,6 +338,7 @@ section.home-banner:before {
 }
 .usp-section{
     height: 82vh;
+    min-height: 700px;
 }
 .usp-section .container{
     height: 100%;

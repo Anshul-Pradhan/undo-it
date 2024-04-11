@@ -106,7 +106,13 @@
                 "head":"<p>you can also consume it daily to <br><strong>IMPROVE OVERALL WELLBEING<br> & STAY HYDRATED</strong></p>",
                 "img":"shopify:\/\/shop_images\/Group_11.png?v=1712501252"
             }
+        },
+        "instagram":{
+            "type": "instagram",
+            "settings": {
+                "head":"#thehydrated"
+            }
         }
     },
-    "order": ["banner", "other-product", "why-undo", "usp"]
+    "order": ["banner", "other-product", "why-undo", "usp", "instagram"]
 }

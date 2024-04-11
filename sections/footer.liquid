@@ -1,0 +1,44 @@
+<div class="pre-footer">
+  <div class="container">
+    <div class="pf-wrapper">
+      <div class="head">
+        <h2>{{ section.settings.head }}</h2>
+      </div>
+      <div class="para">
+        <p>{{ section.settings.para }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-wrapper">
+      <div class="head">
+        <p></p>
+      </div>
+      <div class="newsletter">
+        <input type="email">
+      </div>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+  {
+    "name": "Footer",
+    "settings": [
+      {
+        "type": "text",
+        "id": "head",
+        "label": "Heading",
+        "default": "HydrationCo"
+      }, {
+        "type": "richtext",
+        "id": "para",
+        "label": "Paragraph",
+        "default": "<p>we make products that focus on <strong>healing through hydration</strong> with mostly <strong>herbal ingredients</strong></p>"
+      }
+    ]
+  }
+{% endschema %}

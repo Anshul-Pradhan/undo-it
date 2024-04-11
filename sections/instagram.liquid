@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<section class="insta-section">
+  <div class="container-fluid">
+    <div class="insta-head">
+      <h1>#thehydrated</h1>
+    </div>
+    <div class="insta-wrap">
+      <div class="slider">
+        {% for block in section.blocks %}
+          <div class="img-slide"><img src="" alt=""></div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+      $(document).ready(function(){
+        $(".slider").bxSlider({
+          minSlides: 4,
+          maxSlides: 4,
+          slideWidth: 170,
+          slideMargin: 10,
+          ticker: true,
+          speed: 9000
+        });
+      });
+</script>
+
+{% schema %}
+  {
+    "name": "Instagram Section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "head",
+        "label": "Heading"
+      }
+    ]
+  }
+{% endschema %}
