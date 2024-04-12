@@ -1,46 +1,131 @@
 <section class="home-banner">
-  <img
-    src="https://cdn.shopify.com/s/files/1/0651/3285/5486/files/Frame_2_1.png?v=1712502038"
-    alt=""
-    class="img">
-  {% comment %} <div class="container">
-            <div class="home-wrapper">
-              <div class="home-left">
-                <div class="home-head">
-                  <h1>{{ section.settings.ban_head }}</h1>
+  <div class="container">
+    <div class="home-wrapper">
+      <div class="pro-img-con">
+        {% render 'product-media' | media: media %}
+      </div>
+      {% assign selected_variant = 'undo-it' %}
+      <div class="product">
+        {% form 'product'
+          , product
+          , id: 'product-form'
+          , novalidate: 'novalidate' %}
+          <input
+            type="hidden"
+            name="id"
+            value="{{ selected_variant.id }}">
+
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when 'vendor' %}
+                <div class="vendor">
+                  <span class="pr-vendor">{{ product.vendor }}</span>
                 </div>
-                <div class="home-para">{{ section.settings.ban_para }}</div>
-                <div class="home-cta">
-                  <a href="{{ section.settings.cta_url.url }}" class="custom-btn">{{ section.settings.cta_txt }}</a>
+              {% when 'title' %}
+                <div class="title">
+                  <h1>{{ product.title }}</h1>
                 </div>
-              </div>
-              <div class="home-right"></div>
-            </div>
-      </div> {% endcomment %}
-</section>
+              {% when 'price' %}
+                <div class="price" id="price-{{ section.id }}">
+                  <strike class="real-price">{{ selected_variant.compare_at_price | money }}</strike>
+                  <span class="sell-price">
+                    {{ selected_variant.price | money }}
+                  </span>
+
+                  {% if selected_variant.price < selected_variant.compare_at_price %}
+                    <span>Sale</span>
+                  {% endif %}
+                </div>
+              {% when 'variant_selector' %}
+                <div class="variant">
+                  {% unless product.has_only_default_variant %}
+                    <variant-selector data-url="{{ product.url }}" data-section="{{ section.id }}">
+                      {% for option in product.options_with_values %}
+                        <label for="Option-{{ section.id }}-{{ forloop.index0 }}">{{ option.name }}</label>
+
+                        <div>
+                          <select name="options[{{ option.name | escape }}]" id="Option-{{ section.id }}-{{ forloop.index0 }}">
+                            {% for value in option.values %}
+                              <option
+                                value="{{ value | escape }}"
+                                {% if option.selected_value == value %}
+                                selected="selected"
+                                {% endif %}>
+                                {{ value }}
+                              </option>
+                            {% endfor %}
+                          </select>
+                        </div>
+
+                        <script type="application/json">{{ product.variants | json }}
+                        </script>
+                      {% endfor %}
+                    </variant-selector>
+                  {% endunless %}
+                </div>
+              {% when 'quantity' %}
+                <div class="quantity">
+                  <label for="Quantity-{{ section.id }}">Quantity</label>
+
+                  <div class="quan-num">
+                    <input
+                      type="number"
+                      name="quantity"
+                      id="Quantity-{{ section.id }}"
+                      value="1"
+                      min="1">
+                  </div>
+                </div>
+              {% when 'description' %}
+                <div class="pro-desp">
+                  <p>{{ product.description }}</p>
+                </div>
+              {% when 'checkout_buttons' %}
+                <div class="submit">
+                  <button
+                    type="submit"
+                    name="add"
+                    {% if selected_variant.available == false %}
+                    disabled
+                    {% endif %}>
+                    {% if selected_variant.available == false %}
+                      Sold Out
+                    {% else %}
+                      Add To Cart
+                    {% endif %}
+                  </button>
+                </div>
+            {% else %}
+              {% endcase %}
+            {% endfor %}
+          {% endform %}
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-{% schema %}
-  {
-    "name": "Home Banner",
-    "settings": [
-      {
-        "type": "text",
-        "id": "ban_head",
-        "label": "Banner Heading"
-      }, {
-        "type": "richtext",
-        "id": "ban_para",
-        "label": "Banner Paragraph"
-      }, {
-        "type": "text",
-        "id": "cta_txt",
-        "label": "CTA Text"
-      }, {
-        "type": "page",
-        "id": "cta_url",
-        "label": "Select CTA Action"
-      }
-    ]
-  }
-{% endschema %}
+  {% schema %}
+    {
+      "name": "Home Banner",
+      "settings": [
+        {
+          "type": "text",
+          "id": "ban_head",
+          "label": "Banner Heading"
+        }, {
+          "type": "richtext",
+          "id": "ban_para",
+          "label": "Banner Paragraph"
+        }, {
+          "type": "text",
+          "id": "cta_txt",
+          "label": "CTA Text"
+        }, {
+          "type": "page",
+          "id": "cta_url",
+          "label": "Select CTA Action"
+        }
+      ]
+    }
+  {% endschema %}
