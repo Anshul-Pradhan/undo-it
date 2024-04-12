@@ -1,11 +1,12 @@
 <section class="home-banner">
   <div class="container">
     <div class="home-wrapper">
+      {% assign product = all_products['undo-it'] %} 
       <div class="pro-img-con">
-        {% render 'product-media' | media: media %}
+        <img src="{{ product.featured_image.src | img_url: 'medium' }}" alt="{{ product.featured_image.alt }}">
       </div>
-      {% assign selected_variant = 'undo-it' %}
       <div class="product">
+        {% assign selected_variant = product.selected_or_first_available_variant %}
         {% form 'product'
           , product
           , id: 'product-form'
@@ -14,18 +15,12 @@
             type="hidden"
             name="id"
             value="{{ selected_variant.id }}">
-
-          {% for block in section.blocks %}
-            {% case block.type %}
-              {% when 'vendor' %}
-                <div class="vendor">
-                  <span class="pr-vendor">{{ product.vendor }}</span>
-                </div>
-              {% when 'title' %}
                 <div class="title">
                   <h1>{{ product.title }}</h1>
                 </div>
-              {% when 'price' %}
+                <div class="pro-desp">
+                  <p>{{ product.description }}</p>
+                </div>
                 <div class="price" id="price-{{ section.id }}">
                   <strike class="real-price">{{ selected_variant.compare_at_price | money }}</strike>
                   <span class="sell-price">
@@ -36,51 +31,39 @@
                     <span>Sale</span>
                   {% endif %}
                 </div>
-              {% when 'variant_selector' %}
                 <div class="variant">
                   {% unless product.has_only_default_variant %}
                     <variant-selector data-url="{{ product.url }}" data-section="{{ section.id }}">
                       {% for option in product.options_with_values %}
-                        <label for="Option-{{ section.id }}-{{ forloop.index0 }}">{{ option.name }}</label>
-
-                        <div>
-                          <select name="options[{{ option.name | escape }}]" id="Option-{{ section.id }}-{{ forloop.index0 }}">
-                            {% for value in option.values %}
-                              <option
-                                value="{{ value | escape }}"
-                                {% if option.selected_value == value %}
-                                selected="selected"
-                                {% endif %}>
-                                {{ value }}
-                              </option>
-                            {% endfor %}
-                          </select>
-                        </div>
-
-                        <script type="application/json">{{ product.variants | json }}
-                        </script>
+                      <ul class="{{ option.name }}">
+                        {% for value in option.values %}
+                        <li>
+                          <input type="radio" name="options[{{ option.name | escape }}]" id="Option-{{ section.id }}-{{ forloop.index0 }}-{{ forloop.parentloop.index0 }}" value="{{ value | escape }}" {% if option.selected_value == value %}checked="checked"{% endif %}>
+                          <label for="Option-{{ section.id }}-{{ forloop.index0 }}-{{ forloop.parentloop.index0 }}">{{ value }}</label>
+                        </li>
                       {% endfor %}
+                        </ul>
+                      {% endfor %}
+                      <script type="application/json">{{ product.variants | json }}</script>
                     </variant-selector>
-                  {% endunless %}
+                    {% endunless %}                    
                 </div>
-              {% when 'quantity' %}
-                <div class="quantity">
-                  <label for="Quantity-{{ section.id }}">Quantity</label>
-
-                  <div class="quan-num">
-                    <input
-                      type="number"
-                      name="quantity"
-                      id="Quantity-{{ section.id }}"
-                      value="1"
-                      min="1">
-                  </div>
+                <div class="quantity-wrap">
+                  <div class="bn-quan">
+                    <p class="small-para-txt">Quantity</p>
+                    <div class="quantity">
+                        <div class="minus">
+                            -
+                        </div>
+                        <div class="quan">
+                            <input type="number" name="quantity" id="Quantity-{{ section.id }}" class="update-quantity" value=1 min=1>
+                        </div>
+                        <div class="plus">
+                            +
+                        </div>
+                    </div>
                 </div>
-              {% when 'description' %}
-                <div class="pro-desp">
-                  <p>{{ product.description }}</p>
                 </div>
-              {% when 'checkout_buttons' %}
                 <div class="submit">
                   <button
                     type="submit"
@@ -95,14 +78,107 @@
                     {% endif %}
                   </button>
                 </div>
-            {% else %}
-              {% endcase %}
-            {% endfor %}
           {% endform %}
-        </div>
       </div>
     </div>
   </section>
+  <script defer>
+class VariantSelector extends HTMLElement {
+  constructor() {
+    super();
+    this.addEventListener("change", this.onVariantChange.bind(this));
+  }
+
+  onVariantChange() {
+    this.getSelectedOptions();
+    this.getSelectedVariant();
+    if (this.currentVariant) {
+      this.updateFormID();
+      this.updatePrice();
+    }
+  }
+
+  getSelectedOptions() {
+    this.options = Array.from(this.querySelectorAll('input[type="radio"]:checked'), (input) => input.value);
+    console.log(this.options);
+  }
+
+  getVariantJSON() {
+    this.variantData = this.variantData || JSON.parse(this.querySelector('[type="application/json"]').textContent);
+    return this.variantData;
+  }
+
+  getSelectedVariant() {
+    this.currentVariant = this.getVariantJSON().find(
+      (variant) => {
+        const findings = !variant.options.map(
+          (option, index) => {
+            return this.options[index] === option;
+          }
+        ).includes(false);
+
+        if (findings) return variant;
+      }
+    );
+
+    console.log(this.currentVariant)
+  }
+
+  updateFormID() {
+    const form_input = document.querySelector("#product-form").querySelector('input[name="id"]');
+    form_input.value = this.currentVariant.id;
+  }
+
+  updatePrice() {
+    fetch(`${this.dataset.url}?variant=${this.currentVariant.id}&section_id=${this.dataset.section}`)
+      .then((response) => response.text())
+      .then((responseText) => {
+        const html = new DOMParser().parseFromString(responseText, 'text/html');
+        const oldPrice = document.getElementById('price-{{ section.id }}');
+        const newPrice = html.getElementById('price-{{ section.id }}');
+
+        if (oldPrice && newPrice) oldPrice.innerHTML = newPrice.innerHTML;
+      });
+  }
+}
+customElements.define("variant-selector", VariantSelector);
+</script>
+
+<script>
+
+  $(document).ready(function(){
+    $(".Type li:first-child").addClass('active');
+    $(".Flavour li:first-child").addClass('active');
+    $(".Type li").click(function(){
+      $(".Type li").removeClass('active');
+      $(this).addClass('active');
+    });
+    $(".Flavour li").click(function(){
+      $(".Flavour li").removeClass('active');
+      $(this).addClass('active');
+    });
+  })
+
+</script>
+
+<script>
+    $(document).ready(function() {
+        $('.minus').click(function () {
+            var $input = $(this).parent().find('input');
+            var count = parseInt($input.val()) - 1;
+            count = count < 1 ? 1 : count;
+            $input.val(count);
+            $input.change();
+            return false;
+        });
+        $('.plus').click(function () {
+            var $input = $(this).parent().find('input');
+            $input.val(parseInt($input.val()) + 1);
+            $input.change();
+            return false;
+        });
+    });
+</script>
 
 
   {% schema %}
@@ -125,6 +201,40 @@
           "type": "page",
           "id": "cta_url",
           "label": "Select CTA Action"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "vendor",
+          "name": "Vendor",
+          "limit": 1
+        },
+        {
+          "type": "title",
+          "name": "Title",
+          "limit": 1
+        },
+        {
+          "type": "price",
+          "name": "Price",
+          "limit": 1
+        },
+        {
+          "type": "variant_selector",
+          "name": "Variant Selector",
+          "limit": 1
+        }, {
+          "type": "quantity",
+          "name": "Quantity",
+          "limit": 1
+        }, {
+          "type": "description",
+          "name": "Description",
+          "limit": 1
+        }, {
+          "type": "checkout_buttons",
+          "name": "Checkout Buttons",
+          "limit": 1
         }
       ]
     }
