@@ -7,6 +7,15 @@
           "menu": "main-menu",
           "select_logo": "shopify:\/\/shop_images\/hydration-logo.png"
         }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "head": "HydrationCo",
+          "para": "<p>we make products that focus on <strong>healing through hydration<\/strong> with mostly <strong>herbal ingredients<\/strong><\/p>",
+          "footHead": "<p>Because. We. Are. Your. Friends.<br\/>10% off your first order over ₹2000.<\/p>",
+          "menu": "footer"
+        }
       }
     },
     "content_for_index": [
