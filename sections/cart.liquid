@@ -75,7 +75,12 @@
               <p class="total">{{ cart.total_price | money }}</p>
             </div>
             <div class="checkout-button">
-              <button name="checkout" type="submit">Checkout</button>
+              <form action="/checkout" method="post">
+                <button
+                  name="checkout"
+                  type="submit"
+                  class="checkout">Checkout</button>
+              </form>
             </div>
           </div>
         </div>
