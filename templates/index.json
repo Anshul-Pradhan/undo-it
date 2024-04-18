@@ -5,7 +5,8 @@
       "settings": {
         "ban_head": "A hangover cure that actually works",
         "ban_para": "<p>UNDOit support your mind and body's recovery after sessions on the dancefloor, at a festival or in your living room.<p>",
-        "cta_txt": "Buy Now"
+        "cta_txt": "Buy Now",
+        "cta_url": ""
       }
     },
     "other-product": {
@@ -14,7 +15,7 @@
         "item1": {
           "type": "side-effect",
           "settings": {
-            "img": "shopify:\/\/shop_images\/pill.png?v=1712495412",
+            "img": "shopify:\/\/shop_images\/pill.png",
             "head": "painkillers",
             "para": "destroys liver further"
           }
@@ -22,7 +23,7 @@
         "item2": {
           "type": "side-effect",
           "settings": {
-            "img": "shopify:\/\/shop_images\/coffee.png?v=1712495412",
+            "img": "shopify:\/\/shop_images\/coffee.png",
             "head": "coffee",
             "para": "diuretic, dehydrates the body. narrows blood vessels & raises blood pressure could worsen headache"
           }
@@ -30,7 +31,7 @@
         "item3": {
           "type": "side-effect",
           "settings": {
-            "img": "shopify:\/\/shop_images\/oily-food.png?v=1712495412",
+            "img": "shopify:\/\/shop_images\/oily-food.png",
             "head": "oily food",
             "para": "upsets your already sensitive digestive system, worsening hangover"
           }
@@ -38,7 +39,7 @@
         "item4": {
           "type": "side-effect",
           "settings": {
-            "img": "shopify:\/\/shop_images\/water.png?v=1712495412",
+            "img": "shopify:\/\/shop_images\/water.png",
             "head": "water",
             "para": "not enough nutritional support to undo the damage done by alcohol"
           }
@@ -51,7 +52,9 @@
         "item4"
       ],
       "settings": {
-        "product_img": "shopify:\/\/shop_images\/undo-img.png?v=1713461333"
+        "product_img": "shopify:\/\/shop_images\/undo-img.png",
+        "haeding1": "<p>&lt;h2&gt;social drinking is on the rise, and so are&lt;span class=hang&gt;hangovers&lt;\/span&gt;&lt;\/h2&gt;<\/p>",
+        "haeding2": ""
       }
     },
     "why-undo": {
@@ -61,13 +64,14 @@
           "type": "why-undo",
           "settings": {
             "head": "feel good fast",
+            "subhead": "",
             "content": "<p>with <strong>all natural ingredients<\/strong><\/p>"
           }
         },
         "item2": {
           "type": "why-undo",
           "settings": {
-            "head": " ENERGY & HYDRATION",
+            "head": "ENERGY & HYDRATION",
             "subhead": "ELECTROLYTES",
             "content": "<p><strong>niacin<\/strong><br>Niacin, a B vitamin, helps regulate electrolyte balance in the body, crucial for hydration and overall fluid balance, especially during and after alcohol consumption.<br><br><strong>potassium chloride<\/strong><br>Potassium chloride helps replenish vital electrolytes lost during drinking, supporting optimal hydration levels for a refreshed feeling.<br><br><strong>vitamin B6<\/strong><br>Vitamin B6 helps your body regulate electrolyte levels, assisting in fluid balance and reducing the effects of dehydration.<\/p>"
           }
@@ -113,7 +117,7 @@
       "type": "undo-usp",
       "settings": {
         "head": "<p>you can also consume it daily to <br><strong>IMPROVE OVERALL WELLBEING<br> & STAY HYDRATED<\/strong><\/p>",
-        "img": "shopify:\/\/shop_images\/Group_11.png?v=1712501252"
+        "img": "shopify:\/\/shop_images\/Group_11.png"
       }
     },
     "instagram": {
