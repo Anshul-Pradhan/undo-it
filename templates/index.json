@@ -1,118 +1,133 @@
 {
-    "sections": {
-        "banner":{
-            "type": "home-banner",
-            "settings": {
-                "ban_head":"A hangover cure that actually works",
-                "ban_para":"<p>UNDOit support your mind and body's recovery after sessions on the dancefloor, at a festival or in your living room.<p>",
-                "cta_txt":"Buy Now"
-            }
-        },
-        "other-product":{
-            "type": "other-product",
-            "settings": {
-                "product_img":"shopify:\/\/shop_images\/undo-it_e9b5e01e-78fc-4661-8f48-0d161e69e2ca.png?v=1712491532",
-                "heading1":"<h2>social drinking is on the rise, and so are<span class=hang> hangovers</span></h2>",
-                "heading2":"CURRENT SOLUTIONS DON’T WORK"
-            },
-            "blocks": {
-                "item1":{
-                    "type":"side-effect",
-                    "settings": {
-                        "img":"shopify:\/\/shop_images\/pill.png?v=1712495412",
-                        "head":"painkillers",
-                        "para":"destroys liver further"
-                    }
-                },
-                "item2":{
-                    "type":"side-effect",
-                    "settings": {
-                        "img":"shopify:\/\/shop_images\/coffee.png?v=1712495412",
-                        "head":"coffee",
-                        "para":"diuretic, dehydrates the body. narrows blood vessels & raises blood pressure could worsen headache"
-                    }
-                },
-                "item3":{
-                    "type":"side-effect",
-                    "settings": {
-                        "img":"shopify:\/\/shop_images\/oily-food.png?v=1712495412",
-                        "head":"oily food",
-                        "para":"upsets your already sensitive digestive system, worsening hangover"
-                    }
-                },
-                "item4":{
-                    "type":"side-effect",
-                    "settings": {
-                        "img":"shopify:\/\/shop_images\/water.png?v=1712495412",
-                        "head":"water",
-                        "para":"not enough nutritional support to undo the damage done by alcohol"
-                    }
-                }
-            },
-            "block_order": ["item1", "item2", "item3", "item4"]
-        },
-        "why-undo":{
-            "type": "why-undo-works",
-            "settings": {
-                "head-half1":"why",
-                "head-half2":"work"
-            },
-            "blocks": {
-                "item1":{
-                    "type": "why-undo",
-                    "settings": {
-                        "head":"feel good fast",
-                        "content":"<p>with <strong>all natural ingredients</strong></p>"
-                    }
-                },
-                "item2":{
-                    "type": "why-undo",
-                    "settings": {
-                        "head":" ENERGY & HYDRATION",
-                        "subhead":"ELECTROLYTES",
-                        "content":"<p><strong>niacin</strong><br>Niacin, a B vitamin, helps regulate electrolyte balance in the body, crucial for hydration and overall fluid balance, especially during and after alcohol consumption.<br><br><strong>potassium chloride</strong><br>Potassium chloride helps replenish vital electrolytes lost during drinking, supporting optimal hydration levels for a refreshed feeling.<br><br><strong>vitamin B6</strong><br>Vitamin B6 helps your body regulate electrolyte levels, assisting in fluid balance and reducing the effects of dehydration.</p>"
-                    }
-                },
-                "item3":{
-                    "type": "why-undo",
-                    "settings": {
-                        "head":"NO NAUSEA",
-                        "subhead":"DIGESTIVE SUPPORT",
-                        "content":"<p><strong>ginger</strong><br>Ginger contains bioactive compounds like gingerol and shogaols, which soothes an upset stomach and eases digestive discomfort, providing gentle relief from nausea and indigestion often experienced after drinking</p>"
-                    }
-                },
-                "item4":{
-                    "type": "why-undo",
-                    "settings": {
-                        "head":"NO HANGXIETY",
-                        "subhead":"BRAIN SUPPORT",
-                        "content":"<p><strong>aswagandha</strong><br>Ashwagandha is an adaptogenic herb known to reduce stress and anxiety levels, promoting relaxation and mental well-being.<br><br><strong>brami</strong><br>Brami, also known as Bacopa monnieri, is an herb traditionally used to improve cognitive function, memory, and concentration, supporting mental clarity and focus during hangovers.<br><br><strong>ginkgo biloba</strong><br>Ginkgo Biloba is known for its cognitive-enhancing properties that improves memory, concentration, and overall mental acuity, so you can stay sharp and focused even after a night out.</p>"
-                    }
-                },
-                "item5":{
-                    "type": "why-undo",
-                    "settings": {
-                        "head":"LIVER DETOX",
-                        "subhead":"ANTI-INFLAMMATORY",
-                        "content":"<p><strong>grape seed extract</strong><br>Grape seed extract contains potent antioxidants called proanthocyanidins, which helps fighting off free radicals, reduce oxidative stress, and support overall health and wellbeing, particularly during periods of alcohol-induced oxidative damage.<br><br><strong>pepperine</strong><br>Pepperine, found in black pepper, supports body natural detoxification processes, aiding liver health and function to promote a healthier recovery from alcohol consumption.<br><br><strong>turmeric</strong><br>Turmeric contains curcumin, a compound known for its anti-inflammatory and antioxidant properties, which support liver health and aid in detoxification, essential for reducing hangover-related liver stress and promoting recovery.<br><br><strong>andrographis extract</strong><br>Andrographis extract contains compounds like andrographolides, which support liver health and detoxification, helping your body process alcohol more efficiently and reducing the impact of hangover symptoms.</p>"
-                    }
-                }
-            },
-            "block_order": ["item1", "item2", "item3", "item4", "item5"]
-        },
-        "usp":{
-            "type": "undo-usp",
-            "settings": {
-                "head":"<p>you can also consume it daily to <br><strong>IMPROVE OVERALL WELLBEING<br> & STAY HYDRATED</strong></p>",
-                "img":"shopify:\/\/shop_images\/Group_11.png?v=1712501252"
-            }
-        },
-        "instagram":{
-            "type": "instagram",
-            "settings": {
-                "head":"#thehydrated"
-            }
-        }
+  "sections": {
+    "banner": {
+      "type": "home-banner",
+      "settings": {
+        "ban_head": "A hangover cure that actually works",
+        "ban_para": "<p>UNDOit support your mind and body's recovery after sessions on the dancefloor, at a festival or in your living room.<p>",
+        "cta_txt": "Buy Now"
+      }
     },
-    "order": ["banner", "other-product", "why-undo", "usp", "instagram"]
+    "other-product": {
+      "type": "other-product",
+      "blocks": {
+        "item1": {
+          "type": "side-effect",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/pill.png?v=1712495412",
+            "head": "painkillers",
+            "para": "destroys liver further"
+          }
+        },
+        "item2": {
+          "type": "side-effect",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/coffee.png?v=1712495412",
+            "head": "coffee",
+            "para": "diuretic, dehydrates the body. narrows blood vessels & raises blood pressure could worsen headache"
+          }
+        },
+        "item3": {
+          "type": "side-effect",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/oily-food.png?v=1712495412",
+            "head": "oily food",
+            "para": "upsets your already sensitive digestive system, worsening hangover"
+          }
+        },
+        "item4": {
+          "type": "side-effect",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/water.png?v=1712495412",
+            "head": "water",
+            "para": "not enough nutritional support to undo the damage done by alcohol"
+          }
+        }
+      },
+      "block_order": [
+        "item1",
+        "item2",
+        "item3",
+        "item4"
+      ],
+      "settings": {
+        "product_img": "shopify:\/\/shop_images\/undo-img.png?v=1713461333"
+      }
+    },
+    "why-undo": {
+      "type": "why-undo-works",
+      "blocks": {
+        "item1": {
+          "type": "why-undo",
+          "settings": {
+            "head": "feel good fast",
+            "content": "<p>with <strong>all natural ingredients<\/strong><\/p>"
+          }
+        },
+        "item2": {
+          "type": "why-undo",
+          "settings": {
+            "head": " ENERGY & HYDRATION",
+            "subhead": "ELECTROLYTES",
+            "content": "<p><strong>niacin<\/strong><br>Niacin, a B vitamin, helps regulate electrolyte balance in the body, crucial for hydration and overall fluid balance, especially during and after alcohol consumption.<br><br><strong>potassium chloride<\/strong><br>Potassium chloride helps replenish vital electrolytes lost during drinking, supporting optimal hydration levels for a refreshed feeling.<br><br><strong>vitamin B6<\/strong><br>Vitamin B6 helps your body regulate electrolyte levels, assisting in fluid balance and reducing the effects of dehydration.<\/p>"
+          }
+        },
+        "item3": {
+          "type": "why-undo",
+          "settings": {
+            "head": "NO NAUSEA",
+            "subhead": "DIGESTIVE SUPPORT",
+            "content": "<p><strong>ginger<\/strong><br>Ginger contains bioactive compounds like gingerol and shogaols, which soothes an upset stomach and eases digestive discomfort, providing gentle relief from nausea and indigestion often experienced after drinking<\/p>"
+          }
+        },
+        "item4": {
+          "type": "why-undo",
+          "settings": {
+            "head": "NO HANGXIETY",
+            "subhead": "BRAIN SUPPORT",
+            "content": "<p><strong>aswagandha<\/strong><br>Ashwagandha is an adaptogenic herb known to reduce stress and anxiety levels, promoting relaxation and mental well-being.<br><br><strong>brami<\/strong><br>Brami, also known as Bacopa monnieri, is an herb traditionally used to improve cognitive function, memory, and concentration, supporting mental clarity and focus during hangovers.<br><br><strong>ginkgo biloba<\/strong><br>Ginkgo Biloba is known for its cognitive-enhancing properties that improves memory, concentration, and overall mental acuity, so you can stay sharp and focused even after a night out.<\/p>"
+          }
+        },
+        "item5": {
+          "type": "why-undo",
+          "settings": {
+            "head": "LIVER DETOX",
+            "subhead": "ANTI-INFLAMMATORY",
+            "content": "<p><strong>grape seed extract<\/strong><br>Grape seed extract contains potent antioxidants called proanthocyanidins, which helps fighting off free radicals, reduce oxidative stress, and support overall health and wellbeing, particularly during periods of alcohol-induced oxidative damage.<br><br><strong>pepperine<\/strong><br>Pepperine, found in black pepper, supports body natural detoxification processes, aiding liver health and function to promote a healthier recovery from alcohol consumption.<br><br><strong>turmeric<\/strong><br>Turmeric contains curcumin, a compound known for its anti-inflammatory and antioxidant properties, which support liver health and aid in detoxification, essential for reducing hangover-related liver stress and promoting recovery.<br><br><strong>andrographis extract<\/strong><br>Andrographis extract contains compounds like andrographolides, which support liver health and detoxification, helping your body process alcohol more efficiently and reducing the impact of hangover symptoms.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "item1",
+        "item2",
+        "item3",
+        "item4",
+        "item5"
+      ],
+      "settings": {
+        "head-half1": "why",
+        "head-half2": "work"
+      }
+    },
+    "usp": {
+      "type": "undo-usp",
+      "settings": {
+        "head": "<p>you can also consume it daily to <br><strong>IMPROVE OVERALL WELLBEING<br> & STAY HYDRATED<\/strong><\/p>",
+        "img": "shopify:\/\/shop_images\/Group_11.png?v=1712501252"
+      }
+    },
+    "instagram": {
+      "type": "instagram",
+      "settings": {
+        "head": "#thehydrated"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "other-product",
+    "why-undo",
+    "usp",
+    "instagram"
+  ]
 }

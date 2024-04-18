@@ -4,6 +4,7 @@
       {% assign product = all_products['undo-it'] %} 
       <div class="pro-img-con">
         <img src="{{ product.featured_image.src | img_url: 'medium' }}" alt="{{ product.featured_image.alt }}">
+        <p>{{ product.metafields.custom.below_image }}</p>
       </div>
       <div class="product">
         {% assign selected_variant = product.selected_or_first_available_variant %}
@@ -18,9 +19,6 @@
                 <div class="title">
                   <h1>{{ product.title }}</h1>
                 </div>
-                <div class="pro-desp">
-                  <p>{{ product.description }}</p>
-                </div>
                 <div class="price" id="price-{{ section.id }}">
                   <strike class="real-price">{{ selected_variant.compare_at_price | money }}</strike>
                   <span class="sell-price">
@@ -30,6 +28,9 @@
                   {% if selected_variant.price < selected_variant.compare_at_price %}
                     <span>Sale</span>
                   {% endif %}
+                </div>
+                <div class="pro-desp">
+                  <p>{{ product.description }}</p>
                 </div>
                 <div class="variant">
                   {% unless product.has_only_default_variant %}
@@ -79,7 +80,10 @@
                   </button>
                 </div>
           {% endform %}
-      </div>
+          {% for item in product.metafields.custom.product_usp.value %}
+            {{ item.product_usp }}
+          {% endfor %}
+        </div>
     </div>
   </section>
   <script defer>
