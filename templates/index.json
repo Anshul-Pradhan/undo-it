@@ -11,8 +11,8 @@
         "other-product":{
             "type": "other-product",
             "settings": {
-                "product_img":"shopify:\/\/shop_images\/undo-it_e9b5e01e-78fc-4661-8f48-0d161e69e2ca.png?v=1712491532",
-                "heading1":"<h2>social drinking is on the rise, and so are<span class=hang> hangovers</span></h2>",
+                "product_img":"shopify:\/\/shop_images\/undo-img.png?v=1713461333",
+                "heading1":"<h2>social drinking is on the rise, and so are <span class=hang>hangovers</span><br><br>the #1 cause for hangovers is DEHYDRATION</h2>",
                 "heading2":"CURRENT SOLUTIONS DON’T WORK"
             },
             "blocks": {
