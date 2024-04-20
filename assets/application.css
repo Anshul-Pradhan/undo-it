@@ -530,6 +530,26 @@ input[type=number] {
 
 /* Usp Section Ends */
 
+/* Instagram Section */
+
+.insta-head {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.insta-head p{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 52.5px;
+    letter-spacing: -0.05em;
+    text-align: center;
+    color: #000000;
+}
+
+
+/* Instagram Section Ends */
+
 /* Footer */
 
 .pre-footer .head h2 {
@@ -1051,6 +1071,9 @@ button.checkout{
     }
     .usp-motto li img {
         width: 90px;
+    }
+    .dw-head h2 span.hang{
+        transform: rotate(0deg) translateY(0px);
     }
     /* .wuw-wrapper .item .left-head{
         position: static;
