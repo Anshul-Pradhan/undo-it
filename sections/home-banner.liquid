@@ -80,8 +80,11 @@
                   </button>
                 </div>
           {% endform %}
-          {% for item in product.metafields.custom.product_usp.value %}
-            {{ item.product_usp }}
+          {% for item in product.metafields.custom.custom_data.value %}
+            <div class="item">
+              <p class="di-head">{{ item.heading }}</p>
+              <p class="di-desp">{{ item.description }}</p>
+            </div>
           {% endfor %}
         </div>
     </div>
