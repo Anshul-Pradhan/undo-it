@@ -1,4 +1,7 @@
-<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
 <section class="insta-section">
   <div class="container-fluid">
     <div class="insta-head">
@@ -6,25 +9,33 @@
       {{ section.settings.para }}
     </div>
     <div class="insta-wrap">
-      <ul class="bxslider">
-        {% for block in section.blocks %}
-          <li class="img-slide">
-            <img src="{{ block.settings.img | img_url: 'master' }}" alt=""></li>
-        {% endfor %}
-      </ul>
+      <div class="splide">
+        <div class="splide__track" id="splide-track">
+          <ul class="splide__list">
+            {% for block in section.blocks %}
+              <li class="splide__slide">
+                <img src="{{ block.settings.img | img_url: 'master' }}" alt="">
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <script>
-  $('.bxslider').bxSlider({
-    minSlides: 4,
-    maxSlides: 4,
-    slideWidth: 170,
-    slideMargin: 10,
-    ticker: true,
-    speed: 9000
-  });
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('.splide', {
+    type   : 'loop',
+    drag   : 'free',
+    focus  : 'center',
+    perPage: 3,
+    autoScroll: {
+      speed: 1,
+    },
+  }).mount( window.splide.Extensions );
+});
 </script>
 
 {% schema %}

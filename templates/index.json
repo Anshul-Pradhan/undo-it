@@ -165,6 +165,12 @@
             },
             "block_order": ["item1", "item2", "item3", "item4", "item5", "item6", "item7", "item8"]
         }
-    },
-    "order": ["banner", "other-product", "why-undo", "usp", "instagram"]
+  },
+  "order": [
+    "banner",
+    "other-product",
+    "why-undo",
+    "usp",
+    "instagram"
+  ]
 }
