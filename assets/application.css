@@ -1156,7 +1156,7 @@ button.checkout{
         gap: 40px;
     }
   .splide__slide{
-    padding-top: 50%;
+    padding-top: 100%;
   }
 }
 /* Max Width 767px Ends */
