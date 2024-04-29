@@ -664,7 +664,11 @@ input[type="submit"] {
     font-weight: 600;
     letter-spacing: 0.1em;
 }
-
+.cc-body .cc-item a{
+  font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
 
 /* Footer Ends */
 
