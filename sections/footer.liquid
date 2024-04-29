@@ -41,7 +41,12 @@
             <h4>Contact Us</h4>
           </div>
           <div class="cc-body">
-          
+            {%  for block in section.blocks %}
+              <div class="cc-item">
+                <p>{{ block.settings.head }}</p>
+                <a href="{{ section.settings.anchor-url }}">{{ block.settings.anchor-txt }}</a>
+              </div>
+            {% endfor %}
           </div>
         </div>
       </div>
@@ -70,6 +75,29 @@
         "type": "link_list",
         "id": "menu",
         "label": "Select Menu"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Contact Modal",
+        "type":"contact-modal",
+        "settings": [
+          {
+            "type": "text",
+            "id": "cc-head",
+            "label": "Heading"
+          },
+          {
+            "type": "text",
+            "id": "anchor-url",
+            "label": "Anchor URL"
+          },
+          {
+            "type": "text",
+            "id": "anchor-txt",
+            "label":"Anchor Text"
+          }
+        ]
       }
     ]
   }
