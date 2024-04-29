@@ -1200,6 +1200,9 @@ button.checkout{
   .nav-wrapper .nav-right{
     gap: 50px;
   }
+  .nav-logo {
+        width: 30%;
+    }
 }
 /* Max Width 767px Ends */
 /* Responsive Css Ends */
