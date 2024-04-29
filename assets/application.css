@@ -675,8 +675,14 @@ input[type="submit"] {
     height: 100%;
     inset: 0;
     left: 0;
+  background: #171717AB;
 }
-
+.contact-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Footer Ends */
 
