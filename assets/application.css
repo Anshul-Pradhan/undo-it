@@ -1191,6 +1191,12 @@ button.checkout{
       .tab button {
         font-size: 14px;
     }
+  .faq-ans{
+    padding-left: 12px;
+  }
+  .faq-ans p {
+    font-size: 0.8rem;
+}
 }
 /* Max Width 767px Ends */
 /* Responsive Css Ends */
