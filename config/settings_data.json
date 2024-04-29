@@ -14,7 +14,7 @@
           "contact_modal_mEWgYQ": {
             "type": "contact-modal",
             "settings": {
-              "cc-head": "Email",
+              "head": "",
               "anchor-url": "mailto:contactusnow@apollopharmacy.org",
               "anchor-txt": "contactusnow@apollopharmacy.org"
             }
@@ -22,7 +22,7 @@
           "contact_modal_yMCPYQ": {
             "type": "contact-modal",
             "settings": {
-              "cc-head": "Phone",
+              "head": "",
               "anchor-url": "tel:1234567890",
               "anchor-txt": "1234567890"
             }
@@ -30,7 +30,7 @@
           "contact_modal_b3iwij": {
             "type": "contact-modal",
             "settings": {
-              "cc-head": "",
+              "head": "",
               "anchor-url": "",
               "anchor-txt": ""
             }
@@ -45,7 +45,8 @@
           "head": "HydrationCo",
           "para": "<p>we make products that focus on <strong>healing through hydration<\/strong> with mostly <strong>herbal ingredients<\/strong><\/p>",
           "footHead": "<p>Because. We. Are. Your. Friends.<br\/>10% off your first order over ₹2000.<\/p>",
-          "menu": "footer"
+          "menu": "footer",
+          "cc-head": "Contact Us"
         }
       }
     },
