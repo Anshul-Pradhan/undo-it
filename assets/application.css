@@ -1111,6 +1111,9 @@ button.checkout{
   .faq-wrapper .faq-con{
     width: 100%;
   }
+  .faq-ques{
+    gap: 16px;
+  }
     /* .wuw-wrapper .item .left-head{
         position: static;
     } */
