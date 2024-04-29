@@ -1101,6 +1101,13 @@ button.checkout{
   .splide__slide{
     padding-top: 50%;
   }
+  .tab{
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .tab button{
+    justify-content: center;
+  }
     /* .wuw-wrapper .item .left-head{
         position: static;
     } */
