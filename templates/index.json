@@ -5,8 +5,7 @@
       "settings": {
         "ban_head": "A hangover cure that actually works",
         "ban_para": "<p>UNDOit support your mind and body's recovery after sessions on the dancefloor, at a festival or in your living room.<p>",
-        "cta_txt": "Buy Now",
-        "cta_url": ""
+        "cta_txt": "Buy Now"
       }
     },
     "other-product": {
@@ -15,7 +14,7 @@
         "item1": {
           "type": "side-effect",
           "settings": {
-            "img": "shopify:\/\/shop_images\/pill.png",
+            "img": "shopify:\/\/shop_images\/pill.png?v=1712495412",
             "head": "painkillers",
             "para": "destroys liver further"
           }
@@ -23,7 +22,7 @@
         "item2": {
           "type": "side-effect",
           "settings": {
-            "img": "shopify:\/\/shop_images\/coffee.png",
+            "img": "shopify:\/\/shop_images\/coffee.png?v=1712495412",
             "head": "coffee",
             "para": "diuretic, dehydrates the body. narrows blood vessels & raises blood pressure could worsen headache"
           }
@@ -31,7 +30,7 @@
         "item3": {
           "type": "side-effect",
           "settings": {
-            "img": "shopify:\/\/shop_images\/oily-food.png",
+            "img": "shopify:\/\/shop_images\/oily-food.png?v=1712495412",
             "head": "oily food",
             "para": "upsets your already sensitive digestive system, worsening hangover"
           }
@@ -39,7 +38,7 @@
         "item4": {
           "type": "side-effect",
           "settings": {
-            "img": "shopify:\/\/shop_images\/water.png",
+            "img": "shopify:\/\/shop_images\/water.png?v=1712495412",
             "head": "water",
             "para": "not enough nutritional support to undo the damage done by alcohol"
           }
@@ -52,9 +51,8 @@
         "item4"
       ],
       "settings": {
-        "product_img": "shopify:\/\/shop_images\/undo-img.png",
-        "heading1": "",
-        "heading2": ""
+        "dw-top": "life is better when you’re hydrated",
+        "product_img": "shopify:\/\/shop_images\/undo-img.png?v=1713461333"
       }
     },
     "why-undo": {
@@ -64,14 +62,13 @@
           "type": "why-undo",
           "settings": {
             "head": "feel good fast",
-            "subhead": "",
             "content": "<p>with <strong>all natural ingredients<\/strong><\/p>"
           }
         },
         "item2": {
           "type": "why-undo",
           "settings": {
-            "head": "ENERGY & HYDRATION",
+            "head": " ENERGY & HYDRATION",
             "subhead": "ELECTROLYTES",
             "content": "<p><strong>niacin<\/strong><br>Niacin, a B vitamin, helps regulate electrolyte balance in the body, crucial for hydration and overall fluid balance, especially during and after alcohol consumption.<br><br><strong>potassium chloride<\/strong><br>Potassium chloride helps replenish vital electrolytes lost during drinking, supporting optimal hydration levels for a refreshed feeling.<br><br><strong>vitamin B6<\/strong><br>Vitamin B6 helps your body regulate electrolyte levels, assisting in fluid balance and reducing the effects of dehydration.<\/p>"
           }
@@ -117,7 +114,7 @@
       "type": "undo-usp",
       "settings": {
         "head": "<p>you can also consume it daily to <br><strong>IMPROVE OVERALL WELLBEING<br> & STAY HYDRATED<\/strong><\/p>",
-        "img": "shopify:\/\/shop_images\/Group_11.png"
+        "img": "shopify:\/\/shop_images\/Group_11.png?v=1712501252"
       }
     },
     "instagram": {
@@ -126,49 +123,49 @@
         "item1": {
           "type": "ticker",
           "settings": {
-            "img": "shopify:\/\/shop_images\/undo-it-product.png"
+            "img": "shopify:\/\/shop_images\/undo-it-product.png?v=1713612340"
           }
         },
         "item2": {
           "type": "ticker",
           "settings": {
-            "img": "shopify:\/\/shop_images\/undo-it-product.png"
+            "img": "shopify:\/\/shop_images\/undo-it-product.png?v=1713612340"
           }
         },
         "item3": {
           "type": "ticker",
           "settings": {
-            "img": "shopify:\/\/shop_images\/undo-it-product.png"
+            "img": "shopify:\/\/shop_images\/undo-it-product.png?v=1713612340"
           }
         },
         "item4": {
           "type": "ticker",
           "settings": {
-            "img": "shopify:\/\/shop_images\/undo-it-product.png"
+            "img": "shopify:\/\/shop_images\/undo-it-product.png?v=1713612340"
           }
         },
         "item5": {
           "type": "ticker",
           "settings": {
-            "img": "shopify:\/\/shop_images\/undo-it-product.png"
+            "img": "shopify:\/\/shop_images\/undo-it-product.png?v=1713612340"
           }
         },
         "item6": {
           "type": "ticker",
           "settings": {
-            "img": "shopify:\/\/shop_images\/undo-it-product.png"
+            "img": "shopify:\/\/shop_images\/undo-it-product.png?v=1713612340"
           }
         },
         "item7": {
           "type": "ticker",
           "settings": {
-            "img": "shopify:\/\/shop_images\/undo-it-product.png"
+            "img": "shopify:\/\/shop_images\/undo-it-product.png?v=1713612340"
           }
         },
         "item8": {
           "type": "ticker",
           "settings": {
-            "img": "shopify:\/\/shop_images\/undo-it-product.png"
+            "img": "shopify:\/\/shop_images\/undo-it-product.png?v=1713612340"
           }
         }
       },
@@ -183,9 +180,7 @@
         "item8"
       ],
       "settings": {
-        "head": "#thehydrated",
-        "para": "",
-        "img_height": 100
+        "head": "#thehydrated"
       }
     },
     "instagram1": {
@@ -194,49 +189,49 @@
         "item1": {
           "type": "ticker",
           "settings": {
-            "img": "shopify:\/\/shop_images\/undo-it-product.png"
+            "img": "shopify:\/\/shop_images\/undo-it-product.png?v=1713612340"
           }
         },
         "item2": {
           "type": "ticker",
           "settings": {
-            "img": "shopify:\/\/shop_images\/undo-it-product.png"
+            "img": "shopify:\/\/shop_images\/undo-it-product.png?v=1713612340"
           }
         },
         "item3": {
           "type": "ticker",
           "settings": {
-            "img": "shopify:\/\/shop_images\/undo-it-product.png"
+            "img": "shopify:\/\/shop_images\/undo-it-product.png?v=1713612340"
           }
         },
         "item4": {
           "type": "ticker",
           "settings": {
-            "img": "shopify:\/\/shop_images\/undo-it-product.png"
+            "img": "shopify:\/\/shop_images\/undo-it-product.png?v=1713612340"
           }
         },
         "item5": {
           "type": "ticker",
           "settings": {
-            "img": "shopify:\/\/shop_images\/undo-it-product.png"
+            "img": "shopify:\/\/shop_images\/undo-it-product.png?v=1713612340"
           }
         },
         "item6": {
           "type": "ticker",
           "settings": {
-            "img": "shopify:\/\/shop_images\/undo-it-product.png"
+            "img": "shopify:\/\/shop_images\/undo-it-product.png?v=1713612340"
           }
         },
         "item7": {
           "type": "ticker",
           "settings": {
-            "img": "shopify:\/\/shop_images\/undo-it-product.png"
+            "img": "shopify:\/\/shop_images\/undo-it-product.png?v=1713612340"
           }
         },
         "item8": {
           "type": "ticker",
           "settings": {
-            "img": "shopify:\/\/shop_images\/undo-it-product.png"
+            "img": "shopify:\/\/shop_images\/undo-it-product.png?v=1713612340"
           }
         }
       },
@@ -251,9 +246,7 @@
         "item8"
       ],
       "settings": {
-        "head": "#thehydrated",
-        "para": "",
-        "img_height": 100
+        "head": "#thehydrated"
       }
     }
   },
