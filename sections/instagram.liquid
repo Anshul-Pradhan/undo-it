@@ -13,7 +13,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
         <div class="splide__track" id="splide-track">
           <ul class="splide__list">
             {% for block in section.blocks %}
-              <li class="splide__slide" style="padding-top: {{ section.settings.img_height }}%">
+              <li class="splide__slide">
                 <img src="{{ block.settings.img | img_url: 'master' }}" alt="">
               </li>
             {% endfor %}
@@ -76,15 +76,6 @@ document.addEventListener('DOMContentLoaded', function () {
         "type": "richtext",
         "id": "para",
         "label": "subhead"
-      },
-      {
-        "type": "range",
-        "id": "img_height",
-        "label": "Image Height",
-        "default": 40,
-        "min":10,
-        "max":180,
-        "step":5
       }
     ],
     "blocks": [
