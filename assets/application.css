@@ -661,6 +661,7 @@ input[type="submit"] {
   background: #fff;
     padding: 26px 35px;
     border-radius: 16px;
+  position: relative;
 }
 .cc-body .cc-item p{
   font-size: 24px;
@@ -695,6 +696,8 @@ input[type="submit"] {
 .cc-cross{
   width: 40px;
   height: 40px;
+  margin-left: auto;
+  position: absolute;
 }
 
 /* Footer Ends */
