@@ -58,6 +58,17 @@
       </div>
     </div>
 
+    <script>
+      $(document).ready(function(){
+        $("#open-modal").click(function(){
+          $(".contact-modal").addClass('active');
+        });
+        $(".cc-cross").click(function(){
+          $(".contact-modal").removeClass('active');
+        });
+      });
+    </script>
+
 {% schema %}
   {
     "name": "Footer",
