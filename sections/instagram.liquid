@@ -13,7 +13,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
         <div class="splide__track" id="splide-track">
           <ul class="splide__list">
             {% for block in section.blocks %}
-              <li class="splide__slide" style="padding-top: {{ section.settings.img_height }}">
+              <li class="splide__slide" style="padding-top: {{ section.settings.img_height }}%">
                 <img src="{{ block.settings.img | img_url: 'master' }}" alt="">
               </li>
             {% endfor %}
