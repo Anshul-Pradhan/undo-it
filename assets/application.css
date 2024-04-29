@@ -1293,6 +1293,10 @@ button.checkout{
     flex-direction: column;
     gap: 2px;
   }
+  .cc-cross{
+    width: 25px;
+    height: 25px;
+  }
 }
 /* Max Width 767px Ends */
 /* Responsive Css Ends */
