@@ -1029,6 +1029,9 @@ button.checkout{
         font-size: 16px;
         line-height: 150%;
     }
+  .faq-wrapper .faq-con {
+      width: 90%;
+    }
 }
 /* Max Width 1300px Ends */
 /* Max Width 1200px */
