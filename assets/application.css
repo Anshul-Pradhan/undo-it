@@ -687,6 +687,15 @@ input[type="submit"] {
     align-items: center;
     justify-content: center;
 }
+.cc-cross svg {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+.cc-cross{
+  width: 40px;
+  height: 40px;
+}
 
 /* Footer Ends */
 
