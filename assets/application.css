@@ -555,7 +555,7 @@ input[type=number] {
 }
 .splide__slide{
     position: relative;
-    /* padding-top: 40%; */
+    padding-top: 40%;
 }
 .insta-wrap{
   margin-top: 50px;
