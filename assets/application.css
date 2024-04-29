@@ -659,6 +659,12 @@ input[type="submit"] {
     justify-content: center;
     gap: 30px;
 }
+.cc-body .cc-item p{
+  font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
 
 /* Footer Ends */
 
