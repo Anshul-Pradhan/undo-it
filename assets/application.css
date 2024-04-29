@@ -658,6 +658,7 @@ input[type="submit"] {
     align-items: center;
     justify-content: center;
     gap: 30px;
+  background: #fff;
 }
 .cc-body .cc-item p{
   font-size: 24px;
