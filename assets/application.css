@@ -730,6 +730,9 @@ input[type="submit"] {
 .faq-block.active .faq-ques svg{
     transform: rotate(-180deg);
 }
+section.faq-page{
+  padding-top: 100px
+}
 /* Faq Page Ends */
 
 /* Cart Page */
