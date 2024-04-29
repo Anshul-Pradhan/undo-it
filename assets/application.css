@@ -1158,6 +1158,9 @@ button.checkout{
   .splide__slide{
     padding-top: 100%;
   }
+  .variant ul.Flavour {
+    row-gap: 20px;
+  }
 }
 /* Max Width 767px Ends */
 /* Responsive Css Ends */
