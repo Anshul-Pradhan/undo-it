@@ -1089,7 +1089,7 @@ button.checkout{
     .dw-head h2 span.hang{
         transform: rotate(0deg) translateY(0px);
     }
-  splide__slide{
+  .splide__slide{
     padding-top: 50%;
   }
     /* .wuw-wrapper .item .left-head{
@@ -1155,6 +1155,9 @@ button.checkout{
         flex-direction: column;
         gap: 40px;
     }
+  .splide__slide{
+    padding-top: 50%;
+  }
 }
 /* Max Width 767px Ends */
 /* Responsive Css Ends */
