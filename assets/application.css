@@ -676,6 +676,7 @@ input[type="submit"] {
     inset: 0;
     left: 0;
   background: #171717AB;
+  z-index: 9999;
 }
 .contact-container {
     height: 100%;
