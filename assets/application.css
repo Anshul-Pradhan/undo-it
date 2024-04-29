@@ -1197,6 +1197,9 @@ button.checkout{
   .faq-ans p {
     font-size: 0.8rem;
 }
+  .nav-wrapper .nav-right{
+    gap: 50px;
+  }
 }
 /* Max Width 767px Ends */
 /* Responsive Css Ends */
