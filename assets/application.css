@@ -1053,6 +1053,9 @@ button.checkout{
     .newsletter {
         width: 55%;
     }
+  .tab button{
+    font-size: 16px;
+  }
 }
 /* Max Width 1200px Ends */
 /* Max Width 1100px */
