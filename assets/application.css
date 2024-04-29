@@ -646,7 +646,19 @@ input[type="submit"] {
     line-height: 22.5px;
     color: #000000;
 }
-
+.cc-body .cc-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+.cc-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
 
 /* Footer Ends */
 
