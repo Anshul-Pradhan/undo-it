@@ -44,7 +44,7 @@
             {%  for block in section.blocks %}
               <div class="cc-item">
                 <p>{{ block.settings.head }}</p>
-                <a href="{{ section.settings.anchor-url }}">{{ block.settings.anchor-txt }}</a>
+                <a href="{{ block.settings.anchor-url }}">{{ block.settings.anchor-txt }}</a>
               </div>
             {% endfor %}
           </div>
@@ -75,7 +75,12 @@
         "type": "link_list",
         "id": "menu",
         "label": "Select Menu"
-      }
+      },
+      {
+            "type": "text",
+            "id": "cc-head",
+            "label": "Modal Heading"
+          }
     ],
     "blocks": [
       {
@@ -84,7 +89,7 @@
         "settings": [
           {
             "type": "text",
-            "id": "cc-head",
+            "id": "head",
             "label": "Heading"
           },
           {
