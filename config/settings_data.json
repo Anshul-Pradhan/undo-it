@@ -14,7 +14,7 @@
           "contact_modal_mEWgYQ": {
             "type": "contact-modal",
             "settings": {
-              "head": "",
+              "head": "Email",
               "anchor-url": "mailto:contactusnow@apollopharmacy.org",
               "anchor-txt": "contactusnow@apollopharmacy.org"
             }
@@ -22,24 +22,15 @@
           "contact_modal_yMCPYQ": {
             "type": "contact-modal",
             "settings": {
-              "head": "",
+              "head": "Phone",
               "anchor-url": "tel:1234567890",
               "anchor-txt": "1234567890"
-            }
-          },
-          "contact_modal_b3iwij": {
-            "type": "contact-modal",
-            "settings": {
-              "head": "",
-              "anchor-url": "",
-              "anchor-txt": ""
             }
           }
         },
         "block_order": [
           "contact_modal_mEWgYQ",
-          "contact_modal_yMCPYQ",
-          "contact_modal_b3iwij"
+          "contact_modal_yMCPYQ"
         ],
         "settings": {
           "head": "HydrationCo",
