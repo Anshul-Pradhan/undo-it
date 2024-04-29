@@ -1289,6 +1289,10 @@ button.checkout{
     flex-direction: column;
     gap: 10px;
   }
+  .cc-body .cc-item{
+    flex-direction: column;
+    gap: 2px;
+  }
 }
 /* Max Width 767px Ends */
 /* Responsive Css Ends */
