@@ -648,8 +648,8 @@ input[type="submit"] {
 }
 .cc-body .cc-item {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    align-items: baseline;
+    justify-content: start;
     gap: 8px;
 }
 .cc-wrap {
